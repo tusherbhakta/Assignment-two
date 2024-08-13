@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+  }
+  /* common code start  */
+  *{
+    margin: 0;
+  }
+  .primary-color{
+    color: rgb(230, 83, 60);
+  }
+  .container{
+    width: 73.62%;
+    margin: 0 auto;
+  }
+  /* common code end  */
+  body{
+    background-color: black;
+  }
+
+  /* header start  */
+  header{
+  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+  }
+  /* header start  */
+  /* nav start  */
+  .nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 57px;
+  }
+  .nav-logo{}
+  .logo{
+    font-style: italic;
+    font-size: 2.25rem;
+    font-weight: 800;
+  }
+  .nav-menu{
+    /* box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px; */
+
+  }
+  .nav-menu ul{}
+  .nav-menu ul li{
+    display: inline-block;
+    margin-left: 47px;
+    list-style: none;
+  }
+  .nav-menu ul li a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+    
+  }
+  .nav-hamburger{
+    display: none;
+  }
+    /* .nav-menu ul li a:hover{
+    background-color:rgb(230, 83, 60);
+    padding: 8px 20px;
+    border-radius: 46px;
+   }   */
+  .active{
+    background-color:rgb(230, 83, 60);
+    padding: 8px 20px;
+    border-radius: 46px;
+  }
+  /* nav end  */
+
+  /* media query for mobile start  */
+  @media screen and (max-width:576px) {
+    .container{
+        width: 90%;
+        margin: 0 auto;
+      }
+      .nav-menu{
+        display: none;
+      }
+      .nav-hamburger{
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 1.5rem;
+      }
+  }
+
+  /* media query for mobile end  */
