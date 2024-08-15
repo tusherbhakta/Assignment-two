@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+  font-family: miamaFont;
+  src: url("../fonts/Miama.ttf");
+}
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -10,6 +14,7 @@
   /* common code start  */
   *{
     margin: 0;
+    font-family: Inter;
   }
   .primary-color{
     color: rgb(230, 83, 60);
@@ -109,9 +114,13 @@
     font-size: 4.875rem;
     font-weight: 900;
     text-align: left;
+    line-height: 5rem;
   }
   .banner-span{
-
+      font-family: miamaFont;
+      color: rgb(255, 255, 255);
+      font-size: 9rem;
+      font-weight:400;
   }
   .banner-description{
     margin: 28px 0;
@@ -184,18 +193,15 @@
   .common-heading{
     width: 60%;
     margin: 0 auto 58px;
+    text-align: center;
   }
   .common-title{
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 14px;
-    text-align: center;
   }
   .common-description{
     color: rgba(255, 255, 255, 0.5);
-    text-align: center;
-    padding: 0 20px;
-    
   }
   .cards-container{
     display: flex;
@@ -224,6 +230,96 @@
   }
 
   /* habits start  */
+  /* run start  */
+  .run{}
+  .run-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+  }
+  .run-heading{
+    width: 43%;
+    margin: 40px 0 40px 54px;
+    text-align: left;
+  }
+  .run-title{
+    padding-right: 140px;
+  }
+  .run-des{
+    margin-left: -20px;
+    margin-bottom: 34px;
+    margin-right: 10px;
+  }
+  .btn-large{
+    width: 224px;
+  }
+  .run-img{
+    margin: 30px 32px 30px 0;
+    width: 366px;
+    height: 312px;
+    
+  }
+   .run-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+   }  
+  /* run end  */
+  /* meet start  */
+  .team{}
+  .team-container{}
+  .meet-main-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+  }
+  .trainer1{
+    background-image: url(../images/trainer1.png);
+  }
+  .trainer2{
+    background-image: url(../images/trainer2.png);
+  }
+  .trainer3{
+    background-image: url(../images/trainer3.png);
+  }
+  .trainer4{
+    background-image: url(../images/trainer4.png);
+  }
+  .trainer5{
+    background-image: url(../images/trainer5.png);
+  }
+  .trainer6{
+    background-image: url(../images/trainer6.png);
+  }
+  .img-container{
+    height: 272px;
+    width: 100%;
+    position: relative;
+    border-radius: 18px;
+    background-size:cover;
+    background-position:center;
+    background-color: rgba(255, 255, 255, .2);
+  }
+  .meet-title{
+    margin-left: 30px;
+    margin-top: 210px;
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+  .meet-des{
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: .825rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  /* meet end  */
+
 
   /* media query for mobile start  */
   @media screen and (max-width:576px) {
@@ -232,6 +328,27 @@
         margin: 0 auto;
       }
       /* common style start  */
+      /* *{
+        margin: 0;
+      } */
+      .btn-primary{
+        /* margin-right: 14px; */
+        padding: 15px 16px;
+        border-radius: 42px;
+        color: white;
+        font-size: 1rem;
+        background-color: rgb(230, 83, 60);
+        cursor: pointer;
+      }
+      .btn-secondary{
+        padding: 15px 16px;
+        border-radius: 42px;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+      }
       .common-heading{
         width: 100%;
         margin: 0 auto 58px;
@@ -268,6 +385,12 @@
         /* justify-content: space-between; */
         align-items: left;
       }
+      .banner-img{
+        width: 100%;
+      }
+      .banner-img img{
+        width: 100%;
+      }
       .banner-written{
         width: 70%;
         /* padding-right: 4.81rem; */
@@ -276,7 +399,14 @@
         font-size: 2.7rem;
         font-weight: 900;
         text-align: left;
+        line-height: 3rem;
       }
+      .banner-span{
+        font-family: miamaFont;
+        color: rgb(255, 255, 255);
+        font-size: 6rem;
+        font-weight:400;
+    }
       .banner-btn{
         display: none;
       }
@@ -287,11 +417,15 @@
         justify-content: space-between;
       }
       .banner-cart1{
-        top: 74%;
+        top: 84%;
+        /* width: 10rem;
+        padding: 16px 0px 16px 16px; */
       }
       .banner-cart2{
-        top: 110%;
+        top: 120%;
         right: 55%;
+        /* width: 12.87rem;
+        padding: 20px 23px; */
       }
       /* banner end  */
       /* habits start  */
@@ -303,6 +437,50 @@
         margin-bottom: 36px;
       }
       /* habits end  */
+      /* run start  */
+      .run-container{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        justify-content: center;
+      }
+      .run-heading{
+        width: 80%;
+        margin: 30px auto;
+        /* padding: 30px 33px; */
+      }
+      .run-title{
+        font-size: 2rem;
+        text-align: left;
+      }
+      .btn-large{
+        width: 100%;
+      }
+      .run-img{
+        margin: 0 auto 30px;
+        /* margin: 30px 32px 30px 32px; */
+        width: 80%;
+        height: auto;
+        
+      }
+      .run-img img{
+        width: 100%;
+      }
+      .run-title{
+        padding-right: 30px;
+      }
+      /* .run-des{
+        margin-left: -20px;
+        margin-bottom: 34px;
+        margin-right: 10px;
+      } */
+      /* run end  */
+      /* meet start  */
+      .meet-main-container{
+        grid-template-columns: repeat(1, 1fr);
+    
+      }
+      /* meet end  */
   }
 
   /* media query for mobile end  */
