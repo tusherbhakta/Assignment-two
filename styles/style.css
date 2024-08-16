@@ -678,6 +678,14 @@
         grid-template-columns: repeat(1, 1fr);
     
       }
+      .trainer1{
+        background-image: url(../images/trainer1.png);
+        display: none;
+      }
+      .trainer4{
+        background-image: url(../images/trainer4.png);
+        display: none;
+      }
       /* meet end  */
       /* footer top start  */
       .footer-top{
