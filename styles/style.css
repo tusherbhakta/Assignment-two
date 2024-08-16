@@ -291,7 +291,10 @@
   }
   /* gym facility end  */
   /* bmi start  */
-  .bmi{
+  .bmi-heading{
+    width: 48%;
+  }
+  .bmi-2{
     background-color: rgb(34, 34, 34);
   }
   .bmi-container{
@@ -343,7 +346,7 @@
   .bmi-form{
     width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 48%;
     gap: 12px;
   }
   .bmi-form input, select{
@@ -649,7 +652,8 @@
       /* gym facilities end  */
       /* bmi start  */
       .bmi-heading{
-        margin-left:-10px;
+        width: 90%;
+        padding: 0;
       }
       .bmi-title{
         text-align: left;
