@@ -31,6 +31,7 @@
     font-size: 18px;
     background-color: rgb(230, 83, 60);
     cursor: pointer;
+    border: none;
   }
   .btn-secondary{
     padding: 15px 39px;
@@ -266,6 +267,83 @@
     border-radius: 18px;
    }  
   /* run end  */
+  /* bmi start  */
+  .bmi{
+    background-color: rgb(34, 34, 34);
+  }
+  .bmi-container{
+    padding: 50px 0 50px;
+  }
+  .bmi-title{
+    text-align: start;
+  }
+  .bmi-des{
+    text-align: start;
+  }
+  .bmi-main-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .bmi-chart-container{
+    width: 40%;
+  }
+  .bmi-chart-title{
+    font-size: 1.75rem;
+  }
+  .bmi-chart-table{
+    margin-top: 50px;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  .bmi-chart-table th,td{
+    padding: 15px 20px 15px 18px;
+  }
+  .bmi-chart-table,td,th{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .bmi-chart-table td{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .cal-bmi{
+    width: 50%;
+  }
+  .bmi-chart-title{}
+  .cal-bmi-des{
+    margin-top: 14px;
+    margin-bottom: 35px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .bmi-form-container{
+    
+  }
+  .bmi-form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 12px;
+  }
+  .bmi-form input, select{
+    padding: 20px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+  }
+  /* .bmi-form {
+    background: rgba(255, 255, 255, 0.1);
+  } */
+  .btn-bmi{
+    margin-top: 35px;
+    min-width: 40%;
+  }
+  #sex{
+  }
+  #activity{
+    width: 205.5%;
+  }
+  /* bmi end  */
+
   /* meet start  */
   .team{}
   .team-container{}
@@ -531,6 +609,28 @@
         margin-right: 10px;
       } */
       /* run end  */
+      /* bmi start  */
+      .bmi-heading{
+        margin-left:-10px;
+      }
+      .bmi-title{
+        text-align: left;
+      }
+      .bmi-des{
+        text-align: left;
+      }
+      .bmi-main-container{
+        display: flex;
+        flex-direction: column;
+      }
+      .bmi-chart-container{
+        width: 90%;
+        margin-bottom: 40px;
+      }
+      .cal-bmi{
+        width: 100%;
+      }
+      /* bmi end  */
       /* meet start  */
       .meet-main-container{
         grid-template-columns: repeat(1, 1fr);
