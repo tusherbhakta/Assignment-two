@@ -267,6 +267,29 @@
     border-radius: 18px;
    }  
   /* run end  */
+  /* gym facility start  */
+  .gym-facility{}
+  .gym-fac-container{}
+  .gym-card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .gym-card{
+    width: 30%;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: rgb(34, 34, 34);
+  }
+  .gym-card-title{
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  .gym-card-description{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  /* gym facility end  */
   /* bmi start  */
   .bmi{
     background-color: rgb(34, 34, 34);
@@ -609,6 +632,21 @@
         margin-right: 10px;
       } */
       /* run end  */
+      /* gym facilities start  */
+      .gym-card-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 30px;
+      }
+      .gym-card{
+        width: 88%;
+        padding: 20px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgb(34, 34, 34);
+      }
+      /* gym facilities end  */
       /* bmi start  */
       .bmi-heading{
         margin-left:-10px;
